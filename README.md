@@ -1,42 +1,33 @@
 Roadmap for ProSquare SQL Engine
 (Including Security Features & "White Hat" Testing Plan)
  
-📂 Project Structure
+ProSquare SQL – Custom SQL Execution Engine
+A lightweight SQL execution engine built from scratch, featuring query parsing, optimization, transactions, indexing, and ACID compliance.
 
-graphql
-CopyEdit
-prosquare_sql/        # Root Project Folder
-│── src/
-│   ├── engine/       # Core database engine
-│   │   ├── storage.py        # Manages table storage & retrieval ✅
-│   │   ├── query_executor.py # Executes parsed SQL commands ✅
-│   │   ├── sql_parser.py     # Parses SQL statements into operations ✅
-│   │   ├── transaction.py    # Implements transactions & ACID ✅
-│   │   ├── index.py         # Manages indexes for performance
-│   │   ├── optimizer.py     # Query optimizer
-│   │   ├── schema.py        # Manages table schemas
-│   ├── cli/          # Command-line interface (CLI)
-│   │   ├── repl.py          # Interactive shell for SQL commands
-│   │   ├── cli_commands.py  # Helper functions for CLI
-│   ├── security/     # Security features
-│   │   ├── auth.py         # Implements authentication & RBAC 🔜
-│   │   ├── firewall.py     # Blocks SQL injection attacks 🔜
-│   │   ├── encryption.py   # Handles secure data storage 🔜
-│   ├── utils/        # Utility functions
-│   │   ├── file_manager.py # Handles file storage
-│   │   ├── logger.py       # Logs queries and errors ✅
-│   │   ├── config.py       # Configuration settings ✅
-│   ├── tests/        # Unit tests 🔜
-│── data/             # Stores database files ✅
-│── examples/         # Sample SQL queries ✅
-│── docs/             # Documentation and design notes
-│── README.md         # Project overview ✅
-│── requirements.txt  # Dependencies ✅
-│── .gitignore        # Ignore unnecessary files ✅
-│── setup.py          # Packaging (if needed)
- 
-📝 Roadmap
-Now, let's outline completed milestones and upcoming features.
+Project Overview:
+ProSquare SQL is a custom-built SQL engine designed for high-performance query execution and ACID-compliant transactions. The engine supports essential SQL operations, indexing, query optimization, and a modular storage system. It is built to mimic real-world relational database management systems (RDBMS) while maintaining a lightweight architecture.
+
+This project is designed to demonstrate advanced system design skills and serves as a foundation for understanding database internals, query execution pipelines, and transaction management.
+
+Key Features:
+✔ SQL Query Execution – Supports SELECT, INSERT, UPDATE, DELETE.
+✔ Transaction Management – ACID-compliant with BEGIN TRANSACTION, COMMIT, and ROLLBACK.
+✔ Savepoints & Crash Recovery – Implements SAVEPOINT and ROLLBACK TO SAVEPOINT.
+✔ Indexing & Query Optimization – Uses hash indexing, query caching, and execution planning.
+✔ Aggregation & Grouping – Supports SUM, AVG, COUNT, MIN, MAX, GROUP BY, and HAVING.
+✔ Multi-Table Joins – Implements INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.
+✔ CLI-Based SQL Shell – Interactive command-line interface for executing SQL queries.
+✔ Debugging & Performance Logging – Tracks slow queries, transaction rollbacks, and execution times.
+
+🛠 Tech Stack
+Programming Language: Python
+Storage Engine: JSON-based persistent storage
+Transaction Model: Custom ACID-compliant transaction manager
+Indexing: Hash-based indexing for faster query lookups
+Execution Optimization: Query caching, parallel execution, and batch processing
+
+
+Completed:
  
 🔷 Phase 1: Core SQL Execution Engine (✅ Completed)
 ✅ SQL Parser & Execution
@@ -99,7 +90,8 @@ Now, let's outline completed milestones and upcoming features.
 ✅ Logging & Recovery
 •	Transaction logs for crash recovery
 
-Upcoming: 
+
+Incoming: 
  
 🛡️ Phase 7: Security & Access Control
 🚀 Now, we begin implementing security features!
