@@ -90,11 +90,9 @@ Completed:
 ✅ Logging & Recovery
 •	Transaction logs for crash recovery
 
-
-Incoming: 
  
-🛡️ Phase 7: Security & Access Control
-🚀 Now, we begin implementing security features!
+Phase 7: Security & Access Control
+
 🔜 Step 1: Authentication & Role-Based Access Control
 •	CREATE USER john IDENTIFIED BY 'password';
 •	GRANT SELECT ON employees TO john;
@@ -107,22 +105,24 @@ Incoming:
 🔜 Step 4: Audit Logging & Intrusion Detection
 •	Keep logs of all queries executed (for debugging & security audits)
 •	Detect unauthorized login attempts
+
+Incoming:
  
-🔴 Phase 8: "White Hat" Hacking Phase
-✅ Once security features are implemented, we will try to break them!
-🔴 Attack 1: Bypass Authentication
+Phase 8: "White Hat" Hacking Phase
+
+Attack 1: Bypass Authentication
 •	Try SQL Injection on login (' OR 1=1 --)
-🔴 Attack 2: Escalate Privileges
+Attack 2: Escalate Privileges
 •	Try getting unauthorized GRANT access
-🔴 Attack 3: Inject Malicious Queries
+Attack 3: Inject Malicious Queries
 •	Bypass the firewall rules
-🔴 Attack 4: Read & Decrypt Encrypted Data
+Attack 4: Read & Decrypt Encrypted Data
 •	Try extracting sensitive data from the database
-🔴 Attack 5: Cover Our Tracks
+Attack 5: Cover Our Tracks
 •	Attempt log tampering & forensic evasion
-✅ Once vulnerabilities are found, we will patch them & strengthen security!
+
  
-🔷 Phase 9: Advanced Optimizations & Scalability
+Phase 9: Advanced Optimizations & Scalability
 🔜 Indexing Enhancements
 •	B-Tree and Hash Indexes for faster queries
 🔜 Query Execution Plans
@@ -132,7 +132,7 @@ Incoming:
 🔜 Sharding & Replication
 •	Scale across multiple database files
  
-🔷 Phase 10: Future Expansion
+Phase 10: Future Expansion
 🔜 Stored Procedures & Functions
 •	Custom SQL logic inside the database
 🔜 Triggers
